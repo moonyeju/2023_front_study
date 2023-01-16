@@ -2,6 +2,42 @@
   text-align: center;
 }
 
+body {
+  font-family: "nanumsquare";
+}
+
+img {
+  width: 40%;
+}
+
+.black-nav {
+  background: black;
+  width: 100%;
+  display: flex;
+  color: white;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.like {
+  margin-left: 3%;
+  cursor: pointer;
+}
+.like:hover {
+  color: lightcoral;
+}
+.change {
+  margin-right: 5%;
+  float: right;
+}
+.sort {
+  margin: 5%;
+}
+.modal {
+  margin: 5%;
+  padding: 15%;
+  background: lightgray;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
