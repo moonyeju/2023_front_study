@@ -1,8 +1,11 @@
 import "./Header.css";
-import { React, useState } from "react";
+import React, { useState } from "react";
+import Menu1 from "./Menu1.js";
 
 function Menubar() {
-  const [isHovering, setIsHovering] = useState(0);
+  const [isHovering, setIsHovering] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+
   const handleMouseOver = () => {
     setIsHovering(true);
   };
@@ -10,37 +13,43 @@ function Menubar() {
   const handleMouseOut = () => {
     setIsHovering(false);
   };
+
   return (
-    <div className="menu">
-      <div
+    <ul className="menu">
+      <li
         className={isHovering ? "hov" : "item"}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
+        onClick={() => {
+          setModalOpen(!modalOpen);
+        }}
       >
         카카오
-      </div>
-      <div
+        {modalOpen ? <Menu1 /> : null}
+      </li>
+
+      <li
         className={isHovering ? "hov" : "item"}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >
         뉴진스
-      </div>
-      <div
+      </li>
+      <li
         className={isHovering ? "hov" : "item"}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >
         기술과 서비스
-      </div>
-      <div
+      </li>
+      <li
         className={isHovering ? "hov" : "item"}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >
         약속과 책임
-      </div>
-    </div>
+      </li>
+    </ul>
   );
 }
 export default Menubar;
