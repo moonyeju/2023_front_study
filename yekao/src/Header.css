@@ -1,0 +1,33 @@
+.header {
+  height: 4rem;
+  /* background: burlywood; */
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.menu {
+  display: flex;
+  /* color: black; */
+}
+
+.item {
+  font-size: medium;
+  font-weight: bold;
+  padding: 1rem;
+}
+.hov {
+  font-size: medium;
+  font-weight: bold;
+  padding: 1rem;
+  color: lightgray;
+  cursor: pointer;
+}
+.hov:hover {
+  color: black;
+}
