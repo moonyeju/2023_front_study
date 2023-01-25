@@ -1,4 +1,5 @@
 .main {
+  display: flex;
   margin: 4rem;
 }
 .word1 {
@@ -9,10 +10,57 @@
 .image {
   width: 3rem;
   height: 3rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 .word2 {
+  margin-top: 0;
   display: flex;
   align-items: center;
   text-align: left;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 19rem;
+  height: 12rem;
+  border-radius: 15px;
+  box-shadow: 0.5rem 0.5rem 0.7rem 0.7rem rgb(234, 234, 234);
+}
+.balloon {
+  background-color: #dcdcdc;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  height: auto;
+  letter-spacing: -0.25px;
+  /* margin-top: 6.8px; */
+  padding: 8px 10px;
+  position: relative;
+  width: fit-content;
+  z-index: 100;
+}
+
+.balloon::after {
+  border-color: #dcdcdc transparent;
+  border-style: solid;
+  border-width: 0 6px 8px 6.5px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -7px;
+  width: 0;
+  z-index: 1;
+}
+
+.balloon::before {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 0 6px 8px 6.5px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -8px;
+  width: 0;
+  z-index: 0;
 }

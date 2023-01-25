@@ -10,13 +10,18 @@ function Main() {
   let todayDate = now.getDate();
   return (
     <div className="main">
-      <div className="word1">
-        <img className="image" src={calculate} />
-        <h2>오늘의 카카오</h2>
+      <div>
+        <div className="word1">
+          <img className="image" src={calculate} />
+          <h1>오늘의 카카오</h1>
+        </div>
+        <h1 className="word2">
+          {todayMonth}월 {todayDate}일 {dayOfWeek}요일 소식
+        </h1>
       </div>
-      <h2 className="word2">
-        {todayMonth}월 {todayDate}일 {dayOfWeek}요일 소식
-      </h2>
+      <div className="container">
+        <div className="balloon">주가정보</div>
+      </div>
     </div>
   );
 }
