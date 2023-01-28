@@ -34,12 +34,12 @@
 .icon {
   display: flexbox;
 }
-button {
+.button {
   background: none;
   /* border: none; */
   border-style: hidden;
 }
-button:hover {
+.button:hover {
   cursor: pointer;
   border-radius: 50%;
   background-color: rgb(242, 242, 252);

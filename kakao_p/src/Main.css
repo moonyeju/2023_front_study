@@ -27,22 +27,33 @@ h1 {
 }
 .container1 {
   display: flex;
-  flex-direction: column;
-  margin: 2rem;
-  padding: 1.2rem;
   justify-content: left;
-  width: 37rem;
-  height: 12rem;
+  margin: 2rem;
+  width: 40rem;
+  height: auto;
   border-radius: 15px;
   box-shadow: 0.5rem 0.5rem 0.7rem 0.7rem rgb(234, 234, 234);
+}
+.pad {
+  padding: 1.2rem;
 }
 .container2 {
   padding: 1.2rem;
   margin-top: 2rem;
+  display: flex;
+  justify-content: left;
+  width: 15rem;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0.5rem 0.5rem 0.7rem 0.7rem rgb(234, 234, 234);
+}
+.container3 {
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 19rem;
-  height: 12rem;
+  margin: 2rem;
+  width: 60rem;
+  height: auto;
   border-radius: 15px;
   box-shadow: 0.5rem 0.5rem 0.7rem 0.7rem rgb(234, 234, 234);
 }
@@ -78,4 +89,70 @@ h1 {
 .c {
   display: flex;
   flex-direction: column;
+}
+.tag {
+  margin-top: 5rem;
+  color: gray;
+  display: flex;
+  justify-content: left;
+}
+.mo {
+  margin-top: 0.7rem;
+  font-size: 2.5rem;
+}
+.up {
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+  margin-left: 0.5rem;
+  color: red;
+}
+.day {
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+  color: gray;
+  display: flex;
+  justify-content: left;
+}
+.dot {
+  margin-top: 0.5rem;
+  margin-left: 28rem;
+}
+.txt {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: left;
+}
+.image2 {
+  border-radius: 0 0 15px 15px;
+  width: 40rem;
+  height: auto;
+}
+.chart {
+  margin: 0.5rem;
+}
+.txt2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.7rem;
+}
+.txt3 {
+  margin: 2.5rem;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+.btn {
+  margin: 1rem;
+  padding: 0.5rem;
+  border: solid black;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  color: white;
+  background-color: black;
+  width: fit-content;
+}
+.image3 {
+  width: 40rem;
+  height: auto;
 }

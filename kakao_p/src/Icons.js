@@ -6,13 +6,13 @@ import { ReactComponent as Dark } from "./images/dark.svg";
 function Icons() {
   return (
     <div className="icon">
-      <button>
+      <button className="button">
         <Search className="search" />
       </button>
-      <button>
+      <button className="button">
         <English className="english" />
       </button>
-      <button>
+      <button className="button">
         <Dark className="dark" />
       </button>
     </div>
