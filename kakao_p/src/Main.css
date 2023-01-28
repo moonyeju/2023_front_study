@@ -1,11 +1,14 @@
 .main {
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   margin: 4rem;
 }
 .word1 {
   display: flex;
   align-items: center;
   text-align: left;
+  margin-left: 2rem;
 }
 .image {
   width: 3rem;
@@ -13,13 +16,29 @@
   margin-right: 0.5rem;
 }
 .word2 {
-  margin-top: 0;
   display: flex;
   align-items: center;
   text-align: left;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
 }
-.container {
+h1 {
+  margin: 0;
+}
+.container1 {
   display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 1.2rem;
+  justify-content: left;
+  width: 37rem;
+  height: 12rem;
+  border-radius: 15px;
+  box-shadow: 0.5rem 0.5rem 0.7rem 0.7rem rgb(234, 234, 234);
+}
+.container2 {
+  padding: 1.2rem;
+  margin-top: 2rem;
   justify-content: center;
   align-items: center;
   width: 19rem;
@@ -28,13 +47,12 @@
   box-shadow: 0.5rem 0.5rem 0.7rem 0.7rem rgb(234, 234, 234);
 }
 .balloon {
-  background-color: #dcdcdc;
+  background-color: #e8e8e8;
   border-radius: 12px;
-  font-size: 12px;
-  font-weight: 500;
-  height: auto;
+  font-size: 0.8rem;
+  height: fit-content;
   letter-spacing: -0.25px;
-  /* margin-top: 6.8px; */
+  margin: 0.5rem;
   padding: 8px 10px;
   position: relative;
   width: fit-content;
@@ -42,25 +60,22 @@
 }
 
 .balloon::after {
-  border-color: #dcdcdc transparent;
+  border-color: transparent #e8e8e8 transparent transparent;
   border-style: solid;
-  border-width: 0 6px 8px 6.5px;
+  border-width: 0 8px 10px 8px;
   content: "";
   display: block;
   position: absolute;
-  top: -7px;
+  top: 5px;
+  left: -13px;
   width: 0;
   z-index: 1;
 }
-
-.balloon::before {
-  border-color: transparent;
-  border-style: solid;
-  border-width: 0 6px 8px 6.5px;
-  content: "";
-  display: block;
-  position: absolute;
-  top: -8px;
-  width: 0;
-  z-index: 0;
+.r {
+  display: flex;
+  flex-direction: row;
+}
+.c {
+  display: flex;
+  flex-direction: column;
 }
