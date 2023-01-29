@@ -4,7 +4,7 @@ import calculate from "./images/cal.png";
 import c1pic from "./images/sample.png";
 import c3pic from "./images/pic.png";
 import { AiFillFund } from "react-icons/ai";
-import { VscKebabVertical } from "react-icons/vsc";
+import { AiOutlineMore } from "react-icons/ai";
 import { GrLineChart } from "react-icons/gr";
 import { FcLike } from "react-icons/fc";
 
@@ -41,9 +41,9 @@ function Main() {
                 </div>
 
                 <div className="balloon">히스토리</div>
-                <div className="dot">
-                  <VscKebabVertical />
-                </div>
+                <button className="dot">
+                  <AiOutlineMore size={25} />
+                </button>
               </div>
               <div className="txt">인공지능이 그린 그림은 창작물일까?</div>
               <div className="tag">
