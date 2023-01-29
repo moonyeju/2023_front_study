@@ -1,0 +1,31 @@
+.footer {
+  border-top: solid lightgray 0.1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  list-style: none;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.tit {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.tit:hover {
+  list-style: disc;
+}
+li::marker {
+  color: orange;
+}
+.list {
+  font-size: 1rem;
+}
+.list:hover {
+  font-weight: bold;
+}

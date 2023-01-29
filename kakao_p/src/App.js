@@ -5,6 +5,7 @@ import "./Header.css";
 import Menubar from "./Menubar";
 import Icons from "./Icons";
 import Main from "./Main";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Icons />
       </div>
       <Main />
+      <Footer />
     </div>
   );
 }

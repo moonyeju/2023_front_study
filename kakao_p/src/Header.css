@@ -36,7 +36,6 @@
 }
 .button {
   background: none;
-  /* border: none; */
   border-style: hidden;
 }
 .button:hover {
