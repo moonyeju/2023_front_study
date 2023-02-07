@@ -41,7 +41,6 @@ function Menubar() {
           className={isHovering ? "hov" : "item"}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
-          ref={outside}
           onClick={() => {
             if (modalOpen1 == true) {
               setModalOpen1(false);
