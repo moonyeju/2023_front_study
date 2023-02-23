@@ -5,11 +5,13 @@ import { render } from "@testing-library/react";
 import Prm from "./promisecode";
 import Asaw from "./asawcode";
 import Ani from "./animation";
+import Rp1 from "./ReactPractice1";
 
 function App() {
   return (
     <>
-      <Ani />
+      <Rp1 />
+      {/* <Ani /> */}
       {/* <Asaw /> */}
       {/* <Prm /> */}
     </>
