@@ -4,11 +4,13 @@ import "./App.css";
 import { render } from "@testing-library/react";
 import Prm from "./promisecode";
 import Asaw from "./asawcode";
+import Ani from "./animation";
 
 function App() {
   return (
     <>
-      <Asaw />
+      <Ani />
+      {/* <Asaw /> */}
       {/* <Prm /> */}
     </>
   );
