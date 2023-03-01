@@ -6,11 +6,14 @@ import Prm from "./promisecode";
 import Asaw from "./asawcode";
 import Ani from "./animation";
 import Rp1 from "./ReactPractice1";
-
+import Stylecomponent from "./stylecomponent";
+import Css from "./css";
 function App() {
   return (
     <>
-      <Rp1 />
+      <Css />
+      {/* <Stylecomponent /> */}
+      {/* <Rp1 /> */}
       {/* <Ani /> */}
       {/* <Asaw /> */}
       {/* <Prm /> */}
