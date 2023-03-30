@@ -46,13 +46,26 @@
     
     now.toUTCString() // → "Sun, 17 Apr 2016 07:50:55 GMT"(UTC 시간과 날짜 정보)
     
-- 자바스크립트 객체의 분류
-    
-    <img src=img/js_object.png></img>
-    
 - 희소배열
+
+    배열의 요소가 연속적으로 위치하지 않고 일부가 비어 있는 배열
     
-    <img src=img/sparse_array.png></img>
+| 0 | “A” |
+| --- | --- |
+| 1 | “B” |
+| 2 | “C” |
+| 4 | “E” |
+
+↑ 희소 배열 [length =5]
+
+| 0 | “A” |
+| --- | --- |
+| 1 | “B” |
+| 2 | “C” |
+| 3 | “D” |
+
+↑ 일반적인 배열 [length =4]
+    
     - var a 에 배열 요소가 들어있는지 확인하려면?
         
         → a.hasOwnProperty(”2”);  // true or false
